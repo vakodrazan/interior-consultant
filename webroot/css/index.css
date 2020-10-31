@@ -200,3 +200,14 @@ body > [type="checkbox"]:checked ~ label {
       display: flex;
       flex-direction: row;
       justify-content: space-between; } }
+
+.information__designer > a {
+  color: white; }
+
+.information__designer__address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .information__designer__address > img {
+    border-radius: 50%;
+    width: 85px; }

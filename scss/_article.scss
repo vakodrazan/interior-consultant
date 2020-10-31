@@ -1,0 +1,16 @@
+@import "variables";
+
+.information__designer {
+    > a {
+        color: white;
+    }
+}
+
+.information__designer__address {
+    @include flex-row();
+
+    > img {
+        border-radius: 50%;
+        width: 85px;
+    }
+}
