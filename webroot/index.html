@@ -7,54 +7,66 @@
         <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
-        <header>
-            <h1>This Interior</h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/collection">Collection</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
+        <input type="checkbox" id="menu_checkbox">
+        <label for="menu_checkbox" class="icon icon_menu">
+            Close the menu
+        </label>
+        <header class="header">
+            <div class="container">
+                <h1>This Interior</h1>
+                <label for="menu_checkbox" class="menu">
+                    Open the menu
+                </label>
+
+                <nav class="header__pagination">
+                    <ul class="header__pagination__list">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/collection">Collection</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <header>
-                <h2>Modern interior</h2>
-                <p>
-                    A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
-                </p>
-                <p>
-                    <a href="/read-more">Read more</a>
-                </p>
-            </header>
-            <article>
+            <div class="container">
                 <header>
-                    <h3>Aliza Webber Interior</h3>
+                    <h2>Modern interior</h2>
+                    <p>
+                        A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
+                    </p>
+                    <p>
+                        <a href="/read-more">Read more</a>
+                    </p>
                 </header>
-                <picture>
-                    <source media="(min-width:650px)" srcset="./images/photo1.png">
-                    <source media="(min-width:375px)" srcset="./images/photo1.png">
-                    <img src="./images/photo1.png" alt="Modern Interior">
-                </picture>
-                <address>
-                    <a href="./images/design-owner.png">
-                        <div>
-                            <img src="./images/design-owner.png" alt="Aliza Webber">
+                <article>
+                    <header>
+                        <h3>Aliza Webber Interior</h3>
+                    </header>
+                    <picture>
+                        <source media="(min-width:650px)" srcset="./images/photo1.png">
+                        <source media="(min-width:375px)" srcset="./images/photo1.png">
+                        <img src="./images/photo1.png" alt="Modern Interior">
+                    </picture>
+                    <address>
+                        <a href="./images/design-owner.png">
                             <div>
-                                <p>Aliza Webber</p>
-                                <span>Interior designer</span>
+                                <img src="./images/design-owner.png" alt="Aliza Webber">
+                                <div>
+                                    <p>Aliza Webber</p>
+                                    <span>Interior designer</span>
+                                </div>
+                                <p>Designed in 2020 by Aliza Webber</p>
                             </div>
-                            <p>Designed in 2020 by Aliza Webber</p>
-                        </div>
-                    </a>
-                </address>
-            </article>
-            <footer>
-                <span>
-                    Your name @ DevChallenges.io
-                </span>
-            </footer>
+                        </a>
+                    </address>
+                </article>
+                <footer>
+                    <span>
+                        Your name @ DevChallenges.io
+                    </span>
+                </footer>
+            </div>
         </main>
     </body>
 </html>
