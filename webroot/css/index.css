@@ -38,7 +38,8 @@ body {
   margin: 0;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   background-color: #181719;
-  color: white; }
+  color: white;
+  line-height: 1.5; }
 
 img {
   max-width: 100%; }
@@ -53,6 +54,9 @@ ul {
 
 a {
   text-decoration: none; }
+
+p {
+  margin: 0; }
 
 .container {
   --padding-left: 14px;
@@ -168,3 +172,17 @@ body > [type="checkbox"]:checked ~ label {
       display: flex;
       flex-direction: row;
       justify-content: space-between; } }
+
+.masthead {
+  padding-top: 45px;
+  max-width: 270px; }
+  .masthead > h2 {
+    font-family: "Lora", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 25px;
+    line-height: 2.5; }
+  .masthead > p {
+    font-weight: 300;
+    font-size: 14px; }
