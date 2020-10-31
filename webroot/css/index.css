@@ -63,3 +63,13 @@ a {
       margin-left: auto;
       margin-right: auto;
       padding: 0; } }
+
+.header > .container {
+  --padding-top: 19px;
+  --padding-bottom: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom); }
