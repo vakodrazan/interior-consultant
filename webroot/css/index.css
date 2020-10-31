@@ -1,14 +1,38 @@
 @font-face {
-  font-family: "Montserrat SemiBold";
-  font-weight: 600;
+  font-family: "Montserrat Light";
+  font-weight: 300;
   font-style: normal;
-  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/montserrat-600.woff2") format(woff2), url("../fonts/montserrat-600.woff") format(woff); }
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("../fonts/montserrat-300.woff2") format(woff2), url("../fonts/montserrat-300.woff") format(woff); }
+
+@font-face {
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/montserrat-500.woff2") format(woff2), url("../fonts/montserrat-500.woff") format(woff); }
 
 @font-face {
   font-family: "Montserrat SemiBold";
   font-weight: 600;
   font-style: normal;
   src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/montserrat-600.woff2") format(woff2), url("../fonts/montserrat-600.woff") format(woff); }
+
+@font-face {
+  font-family: "Crimson Pro ExtraLight";
+  font-weight: 200;
+  font-style: normal;
+  src: local("Crimson Pro ExtraLight"), local("Crimson-Pro-ExtraLight"), url("../fonts/crimson-pro-200.woff2") format(woff2), url("../fonts/crimson-pro-200.woff") format(woff); }
+
+@font-face {
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Lora"), local("Lora"), url("../fonts/lora-400.woff2") format(woff2), url("../fonts/lora-400.woff") format(woff); }
+
+@font-face {
+  font-family: "Lora";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Lora"), local("Lora"), url("../fonts/lora-700.woff2") format(woff2), url("../fonts/lora-700.woff") format(woff); }
 
 body {
   margin: 0;

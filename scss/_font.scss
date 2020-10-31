@@ -4,11 +4,18 @@ $path-to-font:"../fonts/";
 
 $font-faces: 
   (
-    name: "Montserrat SemiBold",
-    system-name: "Montserrat-SemiBold",
-    weight: 600,
+    name: "Montserrat Light",
+    system-name: "Montserrat-Light",
+    weight: 300,
     style: normal,
-    filename: "montserrat-600"
+    filename: "montserrat-300"
+  ),
+  (
+    name: "Montserrat Medium",
+    system-name: "Montserrat-Medium",
+    weight: 500,
+    style: normal,
+    filename: "montserrat-500"
   ),
   (
     name: "Montserrat SemiBold",
@@ -16,6 +23,27 @@ $font-faces:
     weight: 600,
     style: normal,
     filename: "montserrat-600"
+  ),
+  (
+    name: "Crimson Pro ExtraLight",
+    system-name: "Crimson-Pro-ExtraLight",
+    weight: 200,
+    style: normal,
+    filename: "crimson-pro-200"
+  ),
+  (
+    name: "Lora",
+    system-name: "Lora",
+    weight: 400,
+    style: normal,
+    filename: "lora-400"
+  ),
+  (
+    name: "Lora",
+    system-name: "Lora",
+    weight: 700,
+    style: normal,
+    filename: "lora-700"
   )
 ;
 
