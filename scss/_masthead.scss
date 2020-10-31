@@ -1,3 +1,5 @@
+@import 'variables';
+
 .masthead {
     padding-top: 45px;
     max-width: 270px;
@@ -13,5 +15,17 @@
     > p {
         font-weight: 300;
         font-size: 14px;
+    }
+}
+
+p.masthead__recommendation {
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    max-width: 115px;
+    @include flex-row();
+
+    a {
+        color: white;
     }
 }
