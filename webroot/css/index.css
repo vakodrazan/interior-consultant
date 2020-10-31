@@ -36,7 +36,9 @@
 
 body {
   margin: 0;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif; }
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: #181719;
+  color: white; }
 
 img {
   max-width: 100%; }
@@ -73,3 +75,84 @@ a {
   padding-right: 0;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom); }
+
+.menu {
+  background-image: url("../images/icon_menu.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 50% 50%;
+  color: transparent; }
+  @media (min-width: 1140px) {
+    .menu {
+      display: none; } }
+
+body > [type="checkbox"] {
+  display: none; }
+
+body > [type="checkbox"]:checked ~ header .header__pagination {
+  transform: translateY(0); }
+
+body > label {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  opacity: 0;
+  transition: opacity 1s;
+  background-color: rgba(0, 0, 0, 0.25); }
+  @media (min-width: 1140px) {
+    body > label {
+      background-color: initial; } }
+
+body > [type="checkbox"]:checked ~ main {
+  z-index: 1; }
+
+body > [type="checkbox"]:checked ~ label {
+  z-index: 2;
+  opacity: 1; }
+
+.header .header__pagination {
+  --padding-top: 1rem;
+  --elem_width: 250px;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-top);
+  padding-left: var(--padding-top);
+  padding-right: var(--padding-top);
+  background-color: #181719;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--elem_width);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: translateY(-110%);
+  transition: transform 0.2s; }
+  @media (min-width: 1140px) {
+    .header .header__pagination {
+      --elem_width: 324px;
+      position: initial;
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+      transform: none;
+      transition: none; } }
+
+.header__pagination__list {
+  order: 1; }
+  .header__pagination__list > li {
+    --padding-bottom: 2rem;
+    padding-bottom: var(--padding-bottom); }
+    .header__pagination__list > li a {
+      color: white; }
+    @media (min-width: 1140px) {
+      .header__pagination__list > li {
+        padding-bottom: 0; } }
+  @media (min-width: 1140px) {
+    .header__pagination__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
