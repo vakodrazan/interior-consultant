@@ -1,0 +1,27 @@
+// File path
+
+$path-to-font:"../fonts/";
+
+$font-faces: 
+  (
+    name: "Montserrat SemiBold",
+    system-name: "Montserrat-SemiBold",
+    weight: 600,
+    style: normal,
+    filename: "montserrat-600"
+  )
+;
+
+@each $face in $font-faces {
+    @font-face {
+      font-family: map-get($face, name);
+      font-weight: map-get($face, weight);
+      font-style: map-get($face, style);
+        src: 
+          local(map-get($face, name)),
+          local(map-get($face, system-name)),
+          url('#{$path_to_font}#{map-get($face, filename)}.woff2') format(woff2),
+          url('#{$path_to_font}#{map-get($face, filename)}.woff') format(woff),
+    }
+  }
+
