@@ -23,3 +23,7 @@ ul {
 a {
     @include anchor();
 }
+
+p {
+    margin: 0;
+}
