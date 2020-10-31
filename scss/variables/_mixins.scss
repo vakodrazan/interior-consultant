@@ -7,3 +7,9 @@
 @mixin anchor {
   text-decoration: none;
 }
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
