@@ -19,7 +19,7 @@ body > [type="checkbox"] {
 
 // when the user check the checkbox by clicking the menu icon, the menu will show
 body > [type="checkbox"]:checked ~ header .header__pagination {
-  transform: translateY(0);
+  transform: translateX(0%);
 }
 
 // because there is a close label in the body, that need to be hidden away
@@ -51,7 +51,7 @@ body > [type="checkbox"]:checked ~ label {
 }
 
 
-.header .header__pagination {
+.header__pagination {
   --padding-top: 1rem;
   --elem_width: 250px;
 
@@ -67,7 +67,7 @@ body > [type="checkbox"]:checked ~ label {
   bottom: 0;
   width: var(--elem_width);
   box-shadow: 0 0 50px rgba(0,0,0,.5);
-  transform: translateY(-110%);
+  transform: translateX(-110%);
   transition: transform 0.2s;
 
   @media (min-width: 1140px) {
@@ -79,26 +79,25 @@ body > [type="checkbox"]:checked ~ label {
     transform: none;
     transition: none;
   }
-}
 
-
-.header__pagination__list {
-  order: 1;
-
-  > li {
-    --padding-bottom: 2rem;
-
-    padding-bottom: var(--padding-bottom);
-
-    a {
-      color: white;
+  &__list {
+    order: 1;
+  
+    > li {
+      --padding-bottom: 2rem;
+  
+      padding-bottom: var(--padding-bottom);
+  
+      a {
+        color: white;
+      }
+      @media (min-width: 1140px) {
+        padding-bottom: 0;
+      }
     }
+  
     @media (min-width: 1140px) {
-      padding-bottom: 0;
+      @include flex-row();
     }
-  }
-
-  @media (min-width: 1140px) {
-    @include flex-row();
   }
 }
