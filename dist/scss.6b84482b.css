@@ -309,13 +309,20 @@ body > [type="checkbox"]:checked ~ label {
   padding-bottom: 25px;
   text-align: center; }
   .footer__info {
+    --padding-top: 9px;
+    --padding-left: 17px;
+    --padding-right: 17px;
     border-top: 1px solid #A9A9A9;
     font-weight: 600;
     font-size: 14px;
     color: #A9A9A9;
-    padding-top: 9px;
-    padding-left: 17px;
-    padding-right: 17px; }
+    padding-top: var(--padding-top);
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right); }
+    @media (min-width: 1140px) {
+      .footer__info {
+        padding: 0;
+        border: none; } }
 
 
 /*# sourceMappingURL=/scss.6b84482b.css.map */
