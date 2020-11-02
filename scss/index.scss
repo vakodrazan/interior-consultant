@@ -2,10 +2,12 @@
 @import "font";
 
 // Secondary file: contains all the default style to each element
-
 @import "default";
+
+// Tertiary file
 @import "container";
 @import "header";
 @import "masthead";
 @import "pagination";
 @import "article";
+@import "footer";
