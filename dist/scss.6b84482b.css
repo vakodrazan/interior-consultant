@@ -100,25 +100,49 @@ svg {
   padding-top: 45px;
   max-width: 270px; }
   .masthead > h2 {
+    --font-size: 36px;
     font-family: "Lora", Arial, Helvetica, sans-serif;
-    font-size: 36px;
+    font-size: var(--font-size);
     font-weight: 400;
     margin: 0;
     padding-bottom: 25px;
     line-height: 2.5; }
+    @media (min-width: 1140px) {
+      .masthead > h2 {
+        --font-size: 48px; } }
   .masthead > p {
+    --font-size: 14px;
     font-weight: 300;
-    font-size: 14px; }
+    font-size: var(--font-size); }
+    @media (min-width: 1140px) {
+      .masthead > p {
+        --font-size: 24px;
+        width: 350px;
+        font-weight: 300; } }
   .masthead__recommendation {
+    --font-size: 14;
     padding-top: 25px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: var(--font-size);
     max-width: 115px;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    @media (min-width: 1140px) {
+      .masthead__recommendation {
+        --font-size: 18px; } }
     .masthead__recommendation a {
       color: white; }
+  @media (min-width: 1140px) {
+    .masthead {
+      max-width: 510px;
+      padding-right: 100px; } }
+
+@media (min-width: 1140px) {
+  main > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
 
 .menu {
   background-image: url("/icon_menu.df0cf619.svg");

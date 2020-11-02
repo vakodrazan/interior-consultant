@@ -5,27 +5,57 @@
     max-width: 270px;
 
     > h2 {
+        --font-size: 36px;
         font-family: "Lora", Arial, Helvetica, sans-serif;
-        font-size: 36px;
+        font-size: var(--font-size);
         font-weight: 400;
         margin: 0;
         padding-bottom: 25px;
         line-height: 2.5;
+
+        @media (min-width: 1140px) {
+            --font-size: 48px;
+        }
     }
     > p {
+        --font-size: 14px;
         font-weight: 300;
-        font-size: 14px;
+        font-size: var(--font-size);
+
+        @media (min-width: 1140px) {
+            --font-size: 24px;
+            width: 350px;
+            font-weight: 300;
+        }
     }
 
     &__recommendation {
+        --font-size: 14;
+
         padding-top: 25px;
         font-weight: 600;
-        font-size: 14px;
+        font-size: var(--font-size);
         max-width: 115px;
         @include flex-row();
+
+        @media (min-width: 1140px) {
+            --font-size: 18px;
+        }
     
         a {
             color: white;
         }
+    }
+
+    @media (min-width: 1140px) {
+        max-width: 510px;
+        padding-right: 100px;
+    }
+}
+
+
+@media (min-width: 1140px) {
+    main > .container {
+        @include flex-row();
     }
 }
