@@ -2,37 +2,37 @@
   font-family: "Montserrat Light";
   font-weight: 300;
   font-style: normal;
-  src: local("Montserrat Light"), local("Montserrat-Light"), url("../fonts/montserrat-300.woff2") format(woff2), url("../fonts/montserrat-300.woff") format(woff); }
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("/montserrat-300.59c67853.woff2") format(woff2), url("/montserrat-300.2dd209b0.woff") format(woff); }
 
 @font-face {
   font-family: "Montserrat Medium";
   font-weight: 500;
   font-style: normal;
-  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/montserrat-500.woff2") format(woff2), url("../fonts/montserrat-500.woff") format(woff); }
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("/montserrat-500.b3017a39.woff2") format(woff2), url("/montserrat-500.c3f4d561.woff") format(woff); }
 
 @font-face {
   font-family: "Montserrat SemiBold";
   font-weight: 600;
   font-style: normal;
-  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/montserrat-600.woff2") format(woff2), url("../fonts/montserrat-600.woff") format(woff); }
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("/montserrat-600.7e4b03bc.woff2") format(woff2), url("/montserrat-600.65eb1a69.woff") format(woff); }
 
 @font-face {
   font-family: "Crimson Pro ExtraLight";
   font-weight: 200;
   font-style: normal;
-  src: local("Crimson Pro ExtraLight"), local("Crimson-Pro-ExtraLight"), url("../fonts/crimson-pro-200.woff2") format(woff2), url("../fonts/crimson-pro-200.woff") format(woff); }
+  src: local("Crimson Pro ExtraLight"), local("Crimson-Pro-ExtraLight"), url("/crimson-pro-200.4a417d72.woff2") format(woff2), url("/crimson-pro-200.4a1a3f12.woff") format(woff); }
 
 @font-face {
   font-family: "Lora";
   font-weight: 400;
   font-style: normal;
-  src: local("Lora"), local("Lora"), url("../fonts/lora-400.woff2") format(woff2), url("../fonts/lora-400.woff") format(woff); }
+  src: local("Lora"), local("Lora"), url("/lora-400.5a325b81.woff2") format(woff2), url("/lora-400.b2210c55.woff") format(woff); }
 
 @font-face {
   font-family: "Lora";
   font-weight: 700;
   font-style: normal;
-  src: local("Lora"), local("Lora"), url("../fonts/lora-700.woff2") format(woff2), url("../fonts/lora-700.woff") format(woff); }
+  src: local("Lora"), local("Lora"), url("/lora-700.3668b879.woff2") format(woff2), url("/lora-700.b7ec53a8.woff") format(woff); }
 
 body {
   margin: 0;
@@ -121,7 +121,7 @@ p.masthead__recommendation {
     color: white; }
 
 .menu {
-  background-image: url("../images/icon_menu.svg");
+  background-image: url("/icon_menu.df0cf619.svg");
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: 50% 50%;
@@ -251,3 +251,6 @@ body > [type="checkbox"]:checked ~ label {
   font-weight: 500;
   font-size: 10px;
   line-height: .5; }
+
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */
