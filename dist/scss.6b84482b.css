@@ -209,48 +209,44 @@ body > [type="checkbox"]:checked ~ label {
     z-index: -1; }
   .information > header {
     display: none; }
-
-.information__designer {
-  position: relative;
-  margin-top: -53px;
-  margin-left: auto;
-  margin-right: 14px;
-  z-index: 2;
-  max-width: 300px;
-  background: #181719;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-top: 7px;
-  padding-left: 22px;
-  padding-bottom: 25px; }
-  .information__designer > a {
-    color: white; }
-    .information__designer > a > p {
-      max-width: 210px;
-      font-family: "Lora", Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 18px;
-      padding-top: 10px; }
-
-.information__designer__address {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 160px; }
-  .information__designer__address > img {
-    border-radius: 50%;
-    width: 50px; }
-
-.information__designer__address--desc > p {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: .7; }
-
-.information__designer__address--desc > span {
-  color: #828282;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: .5; }
+  .information__designer {
+    position: relative;
+    margin-top: -53px;
+    margin-left: auto;
+    margin-right: 14px;
+    z-index: 2;
+    max-width: 268px;
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 7px;
+    padding-left: 22px;
+    padding-bottom: 25px; }
+    .information__designer > a {
+      color: white; }
+      .information__designer > a > p {
+        max-width: 210px;
+        font-family: "Lora", Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        padding-top: 10px; }
+    .information__designer__address {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 160px; }
+      .information__designer__address > img {
+        border-radius: 50%;
+        width: 50px; }
+      .information__designer__address--desc > p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: .7; }
+      .information__designer__address--desc > span {
+        color: #828282;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: .5; }
 
 .footer {
   padding-top: 25px;
