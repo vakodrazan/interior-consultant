@@ -82,6 +82,7 @@ body > [type="checkbox"]:checked ~ label {
 
   &__list {
     order: 1;
+    font-size: 18px;
   
     > li {
       --padding-bottom: 2rem;
@@ -90,6 +91,10 @@ body > [type="checkbox"]:checked ~ label {
   
       a {
         color: white;
+
+        &:hover {
+          font-weight: 700;
+        }
       }
       @media (min-width: 1140px) {
         padding-bottom: 0;
@@ -98,6 +103,10 @@ body > [type="checkbox"]:checked ~ label {
   
     @media (min-width: 1140px) {
       @include flex-row();
+    }
+
+    &--home {
+      font-weight: 700;
     }
   }
 }

@@ -5,6 +5,7 @@
         --padding-top: 19px;
         --padding-bottom: 19px;
         @include flex-row();
+        align-items: center;
         padding-right: 0;
         padding-top: var(--padding-top);
         padding-bottom: var(--padding-bottom);

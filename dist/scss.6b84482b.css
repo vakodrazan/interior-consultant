@@ -79,6 +79,7 @@ svg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-right: 0;
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom); }
@@ -184,12 +185,15 @@ body > [type="checkbox"]:checked ~ label {
       transform: none;
       transition: none; } }
   .header__pagination__list {
-    order: 1; }
+    order: 1;
+    font-size: 18px; }
     .header__pagination__list > li {
       --padding-bottom: 2rem;
       padding-bottom: var(--padding-bottom); }
       .header__pagination__list > li a {
         color: white; }
+        .header__pagination__list > li a:hover {
+          font-weight: 700; }
       @media (min-width: 1140px) {
         .header__pagination__list > li {
           padding-bottom: 0; } }
@@ -198,6 +202,8 @@ body > [type="checkbox"]:checked ~ label {
         display: flex;
         flex-direction: row;
         justify-content: space-between; } }
+    .header__pagination__list--home {
+      font-weight: 700; }
 
 .information {
   position: relative;
