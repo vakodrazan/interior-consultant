@@ -13,7 +13,7 @@
         padding-bottom: 25px;
         line-height: 2.5;
 
-        @media (min-width: 1140px) {
+        @media (min-width: $breakpoint-desktop) {
             --font-size: 48px;
         }
     }
@@ -22,7 +22,7 @@
         font-weight: 300;
         font-size: var(--font-size);
 
-        @media (min-width: 1140px) {
+        @media (min-width: $breakpoint-desktop) {
             --font-size: 24px;
             width: 350px;
             font-weight: 300;
@@ -38,7 +38,7 @@
         max-width: 115px;
         @include flex-row();
 
-        @media (min-width: 1140px) {
+        @media (min-width: $breakpoint-desktop) {
             --font-size: 18px;
         }
     
@@ -47,14 +47,14 @@
         }
     }
 
-    @media (min-width: 1140px) {
+    @media (min-width: $breakpoint-desktop) {
         max-width: 510px;
         padding-right: 100px;
     }
 }
 
 
-@media (min-width: 1140px) {
+@media (min-width: $breakpoint-desktop) {
     main > .container {
         @include flex-row();
     }
