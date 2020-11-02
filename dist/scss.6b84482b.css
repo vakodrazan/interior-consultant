@@ -64,14 +64,18 @@ svg {
 .container {
   --padding-left: 14px;
   --padding-right: 15px;
+  --max_width: 650px;
   padding-left: var(--padding-left);
   padding-right: var(--padding-right); }
-  @media (min-width: 1140px) {
+  @media (min-width: 650px) {
     .container {
-      max-width: 1140px;
+      max-width: var(--max_width);
       margin-left: auto;
       margin-right: auto;
       padding: 0; } }
+  @media (min-width: 1140px) {
+    .container {
+      --max_width: 1140px; } }
 
 .header > .container {
   --padding-top: 19px;
@@ -150,7 +154,7 @@ svg {
   background-size: 24px 24px;
   background-position: 50% 50%;
   color: transparent; }
-  @media (min-width: 1140px) {
+  @media (min-width: 650px) {
     .menu {
       display: none; } }
 
@@ -171,7 +175,7 @@ body > label {
   opacity: 0;
   transition: opacity 1s;
   background-color: rgba(0, 0, 0, 0.25); }
-  @media (min-width: 1140px) {
+  @media (min-width: 650px) {
     body > label {
       background-color: initial; } }
 
@@ -199,7 +203,7 @@ body > [type="checkbox"]:checked ~ label {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   transform: translateX(-110%);
   transition: transform 0.2s; }
-  @media (min-width: 1140px) {
+  @media (min-width: 650px) {
     .header__pagination {
       --elem_width: 324px;
       position: initial;
@@ -218,10 +222,10 @@ body > [type="checkbox"]:checked ~ label {
         color: white; }
         .header__pagination__list > li a:hover {
           font-weight: 700; }
-      @media (min-width: 1140px) {
+      @media (min-width: 650px) {
         .header__pagination__list > li {
           padding-bottom: 0; } }
-    @media (min-width: 1140px) {
+    @media (min-width: 650px) {
       .header__pagination__list {
         display: flex;
         flex-direction: row;
@@ -260,6 +264,9 @@ body > [type="checkbox"]:checked ~ label {
         font-weight: bold;
         font-size: var(--font_size);
         padding-top: 10px; }
+        @media (min-width: 650px) {
+          .information__designer > a > p {
+            --max_width: 240px; } }
         @media (min-width: 1140px) {
           .information__designer > a > p {
             --font_size: 24px;
@@ -275,6 +282,9 @@ body > [type="checkbox"]:checked ~ label {
         --width: 40px;
         border-radius: 50%;
         width: var(--width); }
+        @media (min-width: 650px) {
+          .information__designer__address > img {
+            --width: 50px; } }
         @media (min-width: 1140px) {
           .information__designer__address > img {
             --width: 60px
