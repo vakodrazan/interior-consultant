@@ -108,17 +108,16 @@ svg {
   .masthead > p {
     font-weight: 300;
     font-size: 14px; }
-
-p.masthead__recommendation {
-  padding-top: 25px;
-  font-weight: 600;
-  font-size: 14px;
-  max-width: 115px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  p.masthead__recommendation a {
-    color: white; }
+  .masthead__recommendation {
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    max-width: 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .masthead__recommendation a {
+      color: white; }
 
 .menu {
   background-image: url("/icon_menu.df0cf619.svg");
